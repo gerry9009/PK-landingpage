@@ -1,0 +1,49 @@
+.home {
+  background: var(--dark-blue-main);
+}
+
+.home-container {
+  width: 95%;
+  margin: auto;
+}
+
+.home-content {
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 2rem 0 3rem;
+}
+
+.home-content-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.home-content-container p {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    width: 70%;
+    max-width: 600px;
+  }
+
+  .home-content {
+    background-image: url("../images/bg-curvy-desktop.svg");
+  }
+
+  .home-content-container {
+    width: 60%;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+}

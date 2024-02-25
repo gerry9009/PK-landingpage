@@ -1,4 +1,4 @@
-# PK HTML-CSS Gyakorlás
+# PK HTML-CSS Gyakorlás - megoldás
 
 Ez a projekt azért jött létre, hogy a HTML és CSS elméleti tudást, gyakorlatba ültessük.
 

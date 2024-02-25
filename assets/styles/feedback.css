@@ -1,0 +1,69 @@
+.feedback {
+  min-height: 80vh;
+}
+
+.feedback-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  position: relative;
+  width: 80%;
+  max-width: 475px;
+  margin: auto;
+}
+
+.feedback-card {
+  background-color: var(--dark-blue-main);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 1px 2px 3px var(--black);
+}
+
+.feedback-card-top {
+  line-height: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.feedback-card-bottom img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.feedback-card:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-container::before {
+  position: absolute;
+  top: -40px;
+  content: "";
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  width: 55px;
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  .feedback {
+    min-height: 40vh;
+  }
+
+  .feedback-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 90%;
+    max-width: 1500px;
+  }
+}
